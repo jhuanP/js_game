@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Game Challenge</title>
+  <style type="text/css">
+    .hide {
+      display: none;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+    .clear {
+      clear: both;
+    }
+    body{
+        background: gold;
+        font-family: fantasy;
+        color: black;
+        background-image:linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8)), url("HockeyRink-Zones.png");
+        font-weight: bolder;
+        
+}
+
+  </style>
+</head>
+<body>
+  <div style="width: 700px;margin: 0 auto;">
+    <h1 style="margin-bottom:5px">Hockey, JavaScript, and jQuery oh My!</h1>
+    <h2 style="margin-top: 0">...the game!</h2>
+    <div style="margin: 0 auto;text-align:right">
+      <button id="team1reset">RESET</button><br>
+      NUMBER OF RESETS: <span id="team1num-resets">0</span>
+    </div>
+    <div style= "margin: 0 auto;text-align: center">
+    <button id = "ClearReset">Clear Resets</button><br>
+    </div>
+    <div style="margin: 0 auto;text-align:left">
+      <button id="team2reset">RESET</button><br>
+      NUMBER OF RESETS: <span id="team2num-resets">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="left">
+      <h2>
+        Team 1
+      </h2>
+      <div class="hits">
+        SHOTS TAKEN: <span id="teamone-numshots">0</span><br>
+        GOALS: <span id="teamone-numhits">0</span>
+      </div>
+      <div>
+        <button id="teamone-shoot">SHOOT</button>
+      </div>
+    </div>
+    <div class="right">
+      <h2>
+        Team 2
+      </h2>
+      <div class bold="hits">
+        SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br>
+        GOALS: <span id="teamtwo-numhits">0</span>
+      </div>
+      <div>
+        <button id="teamtwo-shoot">SHOOT</button>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
